@@ -1,0 +1,73 @@
+# ==============================================================
+# Project Configuration File
+# All hyperparameters, paths, and settings live here.
+# Change values here instead of editing code directly.
+# ==============================================================
+
+project:
+  name: "SR_Project"
+  seed: 42 # Random seed for reproducibility
+
+# ----------------------------------------------------------
+# Dataset paths — update these to match your folder layout
+# ----------------------------------------------------------
+data:
+  root: "data/DIV2K"
+  train_hr: "DIV2K_train_HR"
+  train_lr: "DIV2K_train_LR_bicubic/X2"
+  valid_hr: "DIV2K_valid_HR"
+  valid_lr: "DIV2K_valid_LR_bicubic/X2"
+
+  scale_factor: 2 # x2 super-resolution
+  max_train_images: 200 # Use first N images for debugging (set to null for all)
+  max_valid_images: 20 # Use first N images for validation
+
+# ----------------------------------------------------------
+# Patch settings — critical for VRAM management
+# ----------------------------------------------------------
+patches:
+  hr_patch_size: 128 # HR crop size in pixels
+  # LR patch = hr_patch_size / scale_factor = 64x64
+
+# ----------------------------------------------------------
+# DataLoader settings
+# ----------------------------------------------------------
+dataloader:
+  batch_size: 16 # Reduce to 8 if VRAM errors occur
+  num_workers: 0 # Number of CPU workers for loading data
+  pin_memory: true # Faster CPU→GPU transfer
+
+# ----------------------------------------------------------
+# Training settings
+# ----------------------------------------------------------
+training:
+  epochs: 100
+  learning_rate: 0.0001
+  weight_decay: 0.0 # L2 regularization (0 for SRCNN)
+  use_amp: true # Mixed precision training (saves VRAM)
+  clip_grad_norm: 1.0 # Gradient clipping to prevent instability
+
+  # How often to log and save
+  log_interval: 10 # Log every N batches
+  save_interval: 5 # Save checkpoint every N epochs
+  val_interval: 1 # Run validation every N epochs
+
+# ----------------------------------------------------------
+# Model-specific settings
+# ----------------------------------------------------------
+srcnn:
+  num_channels: 3 # RGB input
+  f1: 64 # Filters in layer 1
+  f2: 32 # Filters in layer 2
+  f3: 3 # Output channels (RGB)
+  k1: 9 # Kernel size layer 1
+  k2: 1 # Kernel size layer 2 (1x1 conv)
+  k3: 5 # Kernel size layer 3
+
+# ----------------------------------------------------------
+# Output paths
+# ----------------------------------------------------------
+paths:
+  checkpoints: "checkpoints"
+  logs: "logs"
+  validation_images: "outputs/validation_images"
