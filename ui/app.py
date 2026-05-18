@@ -32,22 +32,22 @@ from inference.inference_pipeline import InferencePipeline
 AVAILABLE_MODELS = {
     "SRCNN (Super-Resolution x2)": {
         "type": "srcnn",
-        "checkpoint": "checkpoints/srcnn/srcnn_best.pth",
+        "checkpoint": "checkpoints_combined/srcnn/srcnn_combined_epoch_0005.pth",
         "description": "Fast super-resolution. Bicubic upscaling refined by CNN. Best for quick inference.",
     },
     "Denoising Autoencoder": {
         "type": "denoising",
-        "checkpoint": "checkpoints/denoising/denoising_best.pth",
+        "checkpoint": "checkpoints_combined/denoising/denoising_combined_epoch_0030.pth",
         "description": "Removes Gaussian noise and JPEG artifacts from images.",
     },
     "SRResNet (Super-Resolution x2)": {
         "type": "srresnet",
-        "checkpoint": "checkpoints/srresnet/srresnet_best.pth",
+        "checkpoint": "checkpoints_combined/srresnet/srresnet_combined_epoch_0045.pth",
         "description": "Deep residual network for higher quality super-resolution.",
     },
     "SRGAN (Super-Resolution x2)": {
         "type": "srgan",
-        "checkpoint": "checkpoints/srgan/srgan_gen_epoch_0100.pth",
+        "checkpoint": "checkpoints_combined/srgan/srgan_combined_gen_epoch_0030.pth",
         "description": "GAN-based super-resolution for perceptually sharp results.",
     },
 }

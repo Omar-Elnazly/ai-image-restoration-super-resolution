@@ -1,6 +1,52 @@
-checkpoints/
-data/
-datasets/
-logs/
-outputs/
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Data — images are too large for GitHub
+data/DIV2K/
+data/CelebA/
+
+# Model checkpoints — too large for GitHub
+checkpoints/
+checkpoints_combined/
+
+# Training logs
+logs/
+logs_combined/
+
+# Training outputs
+outputs/
+
+# Zip files
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Temporary and test files
+test.py
+
+# IDE and OS files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+*.cache/

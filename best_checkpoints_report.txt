@@ -1,0 +1,138 @@
+BEST CHECKPOINTS REPORT
+============================================================
+
+SRCNN
+  srcnn_combined_epoch_0005.pth [checkpoints_combined] 32.07 dB <- BEST
+  srcnn_combined_epoch_0020.pth [checkpoints_combined] 31.60 dB
+  srcnn_combined_epoch_0040.pth [checkpoints_combined] 30.98 dB
+  srcnn_combined_epoch_0015.pth [checkpoints_combined] 30.98 dB
+  srcnn_combined_epoch_0010.pth [checkpoints_combined] 30.70 dB
+  srcnn_combined_epoch_0030.pth [checkpoints_combined] 30.69 dB
+  srcnn_combined_best.pth [checkpoints_combined]     30.46 dB
+  srcnn_combined_epoch_0045.pth [checkpoints_combined] 30.45 dB
+  srcnn_combined_epoch_0035.pth [checkpoints_combined] 30.01 dB
+  srcnn_combined_epoch_0025.pth [checkpoints_combined] 29.96 dB
+  srcnn_combined_epoch_0050.pth [checkpoints_combined] 29.54 dB
+  srcnn_epoch_0100.pth [checkpoints]                 29.51 dB
+  srcnn_epoch_0080.pth [checkpoints]                 29.50 dB
+  srcnn_epoch_0075.pth [checkpoints]                 28.64 dB
+  srcnn_best.pth [checkpoints]                       28.31 dB
+  srcnn_epoch_0070.pth [checkpoints]                 28.31 dB
+  srcnn_epoch_0085.pth [checkpoints]                 28.26 dB
+  srcnn_epoch_0055.pth [checkpoints]                 28.22 dB
+  srcnn_epoch_0095.pth [checkpoints]                 28.10 dB
+  srcnn_epoch_0090.pth [checkpoints]                 27.90 dB
+  srcnn_epoch_0060.pth [checkpoints]                 27.46 dB
+  srcnn_epoch_0030.pth [checkpoints]                 27.06 dB
+  srcnn_epoch_0065.pth [checkpoints]                 27.00 dB
+  srcnn_epoch_0050.pth [checkpoints]                 27.00 dB
+  srcnn_epoch_0035.pth [checkpoints]                 26.66 dB
+  srcnn_epoch_0045.pth [checkpoints]                 25.94 dB
+  srcnn_epoch_0040.pth [checkpoints]                 25.76 dB
+  srcnn_epoch_0025.pth [checkpoints]                 25.55 dB
+  srcnn_epoch_0020.pth [checkpoints]                 24.67 dB
+  srcnn_epoch_0015.pth [checkpoints]                 24.66 dB
+  srcnn_epoch_0010.pth [checkpoints]                 23.10 dB
+  srcnn_epoch_0005.pth [checkpoints]                 20.03 dB
+
+Denoising
+  denoising_combined_epoch_0030.pth [checkpoints_combined] 30.31 dB <- BEST
+  denoising_combined_epoch_0025.pth [checkpoints_combined] 30.12 dB
+  denoising_combined_epoch_0045.pth [checkpoints_combined] 30.03 dB
+  denoising_combined_epoch_0020.pth [checkpoints_combined] 29.80 dB
+  denoising_combined_epoch_0040.pth [checkpoints_combined] 29.76 dB
+  denoising_combined_best.pth [checkpoints_combined] 29.74 dB
+  denoising_combined_epoch_0050.pth [checkpoints_combined] 29.63 dB
+  denoising_combined_epoch_0035.pth [checkpoints_combined] 29.30 dB
+  denoising_combined_epoch_0005.pth [checkpoints_combined] 28.34 dB
+  denoising_best.pth [checkpoints]                   28.23 dB
+  denoising_combined_epoch_0015.pth [checkpoints_combined] 28.15 dB
+  denoising_combined_epoch_0010.pth [checkpoints_combined] 27.77 dB
+  denoising_epoch_0065.pth [checkpoints]             26.78 dB
+  denoising_epoch_0090.pth [checkpoints]             26.71 dB
+  denoising_epoch_0070.pth [checkpoints]             26.64 dB
+  denoising_epoch_0085.pth [checkpoints]             26.62 dB
+  denoising_epoch_0080.pth [checkpoints]             26.49 dB
+  denoising_epoch_0095.pth [checkpoints]             26.49 dB
+  denoising_epoch_0100.pth [checkpoints]             26.11 dB
+  denoising_epoch_0055.pth [checkpoints]             26.09 dB
+  denoising_epoch_0075.pth [checkpoints]             25.98 dB
+  denoising_epoch_0050.pth [checkpoints]             25.94 dB
+  denoising_epoch_0060.pth [checkpoints]             25.65 dB
+  denoising_epoch_0040.pth [checkpoints]             24.97 dB
+  denoising_epoch_0045.pth [checkpoints]             24.92 dB
+  denoising_epoch_0035.pth [checkpoints]             24.17 dB
+  denoising_epoch_0025.pth [checkpoints]             21.87 dB
+  denoising_epoch_0030.pth [checkpoints]             21.52 dB
+  denoising_epoch_0015.pth [checkpoints]             19.29 dB
+  denoising_epoch_0020.pth [checkpoints]             19.28 dB
+  denoising_epoch_0010.pth [checkpoints]             18.53 dB
+  denoising_epoch_0005.pth [checkpoints]             16.57 dB
+
+SRResNet
+  srresnet_combined_epoch_0045.pth [checkpoints_combined] 32.70 dB <- BEST
+  srresnet_combined_epoch_0035.pth [checkpoints_combined] 31.62 dB
+  srresnet_combined_epoch_0025.pth [checkpoints_combined] 31.34 dB
+  srresnet_combined_epoch_0040.pth [checkpoints_combined] 30.86 dB
+  srresnet_combined_best.pth [checkpoints_combined]  30.74 dB
+  srresnet_combined_epoch_0030.pth [checkpoints_combined] 30.31 dB
+  srresnet_combined_epoch_0020.pth [checkpoints_combined] 30.24 dB
+  srresnet_combined_epoch_0015.pth [checkpoints_combined] 30.22 dB
+  srresnet_combined_epoch_0050.pth [checkpoints_combined] 30.18 dB
+  srresnet_combined_epoch_0010.pth [checkpoints_combined] 29.53 dB
+  srresnet_epoch_0095.pth [checkpoints]              29.28 dB
+  srresnet_combined_epoch_0005.pth [checkpoints_combined] 28.48 dB
+  srresnet_epoch_0100.pth [checkpoints]              28.35 dB
+  srresnet_epoch_0090.pth [checkpoints]              27.81 dB
+  srresnet_epoch_0085.pth [checkpoints]              27.79 dB
+  srresnet_epoch_0080.pth [checkpoints]              27.62 dB
+  srresnet_epoch_0075.pth [checkpoints]              27.58 dB
+  srresnet_best.pth [checkpoints]                    27.56 dB
+  srresnet_epoch_0065.pth [checkpoints]              27.50 dB
+  srresnet_epoch_0050.pth [checkpoints]              27.46 dB
+  srresnet_epoch_0070.pth [checkpoints]              27.17 dB
+  srresnet_epoch_0055.pth [checkpoints]              27.00 dB
+  srresnet_epoch_0060.pth [checkpoints]              26.96 dB
+  srresnet_epoch_0045.pth [checkpoints]              26.27 dB
+  srresnet_epoch_0030.pth [checkpoints]              25.98 dB
+  srresnet_epoch_0035.pth [checkpoints]              25.92 dB
+  srresnet_epoch_0040.pth [checkpoints]              25.68 dB
+  srresnet_epoch_0025.pth [checkpoints]              24.89 dB
+  srresnet_epoch_0020.pth [checkpoints]              23.63 dB
+  srresnet_epoch_0015.pth [checkpoints]              23.61 dB
+  srresnet_epoch_0010.pth [checkpoints]              21.13 dB
+  srresnet_epoch_0005.pth [checkpoints]              20.07 dB
+
+SRGAN
+  srgan_combined_gen_epoch_0030.pth [checkpoints_combined] 31.26 dB <- BEST
+  srgan_combined_gen_epoch_0005.pth [checkpoints_combined] 30.43 dB
+  srgan_combined_gen_epoch_0025.pth [checkpoints_combined] 30.15 dB
+  srgan_combined_gen_epoch_0010.pth [checkpoints_combined] 29.53 dB
+  srgan_gen_epoch_0070.pth [checkpoints]             29.41 dB
+  srgan_combined_gen_epoch_0015.pth [checkpoints_combined] 29.19 dB
+  srgan_combined_gen_epoch_0020.pth [checkpoints_combined] 28.98 dB
+  srgan_combined_gen_best.pth [checkpoints_combined] 28.48 dB
+  srgan_combined_gen_epoch_0045.pth [checkpoints_combined] 28.42 dB
+  srgan_gen_epoch_0075.pth [checkpoints]             28.38 dB
+  srgan_gen_epoch_0085.pth [checkpoints]             28.01 dB
+  srgan_combined_gen_epoch_0050.pth [checkpoints_combined] 27.80 dB
+  srgan_combined_gen_epoch_0035.pth [checkpoints_combined] 27.76 dB
+  srgan_gen_epoch_0100.pth [checkpoints]             27.43 dB
+  srgan_gen_epoch_0050.pth [checkpoints]             27.38 dB
+  srgan_gen_epoch_0045.pth [checkpoints]             27.25 dB
+  srgan_combined_gen_epoch_0040.pth [checkpoints_combined] 27.23 dB
+  srgan_gen_epoch_0095.pth [checkpoints]             27.22 dB
+  srgan_gen_epoch_0065.pth [checkpoints]             27.14 dB
+  srgan_gen_epoch_0090.pth [checkpoints]             27.01 dB
+  srgan_gen_epoch_0040.pth [checkpoints]             26.92 dB
+  srgan_gen_epoch_0080.pth [checkpoints]             26.83 dB
+  srgan_gen_epoch_0035.pth [checkpoints]             26.65 dB
+  srgan_gen_epoch_0030.pth [checkpoints]             26.63 dB
+  srgan_gen_epoch_0010.pth [checkpoints]             26.41 dB
+  srgan_gen_epoch_0060.pth [checkpoints]             26.30 dB
+  srgan_gen_epoch_0015.pth [checkpoints]             26.28 dB
+  srgan_gen_epoch_0055.pth [checkpoints]             26.00 dB
+  srgan_gen_epoch_0025.pth [checkpoints]             25.74 dB
+  srgan_gen_epoch_0020.pth [checkpoints]             25.46 dB
+  srgan_gen_epoch_0005.pth [checkpoints]             25.07 dB
+

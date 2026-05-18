@@ -1,0 +1,60 @@
+# ==============================================================
+# Combined DIV2K + CelebA Training Configuration
+# Trains on both datasets together for best results
+# Original config.yaml untouched
+# ==============================================================
+
+project:
+  name: "SR_Project_Combined"
+  seed: 42
+
+# DIV2K paths (existing data)
+data:
+  div2k_root: "data/DIV2K"
+  div2k_train_hr: "DIV2K_train_HR"
+  div2k_train_lr: "DIV2K_train_LR_bicubic/X2"
+  div2k_valid_hr: "DIV2K_valid_HR"
+  div2k_valid_lr: "DIV2K_valid_LR_bicubic/X2"
+
+  # CelebA paths (new data)
+  celeba_root: "data/CelebA"
+  celeba_hr: "img_align_celeba"
+  celeba_lr: "img_align_celeba_LR"
+
+  scale_factor: 2
+  max_div2k_train: 200 # All your DIV2K training images
+  max_div2k_valid: 20 # All your DIV2K validation images
+  max_celeba_train: 9000 # First 9000 CelebA for training
+  max_celeba_valid: 100 # 100 CelebA for validation
+
+patches:
+  hr_patch_size: 128
+
+dataloader:
+  batch_size: 16
+  num_workers: 0
+  pin_memory: true
+
+training:
+  epochs: 50 # 50 epochs fine-tuning on top of DIV2K training
+  learning_rate: 0.00005 # Lower LR — fine-tuning not training from scratch
+  weight_decay: 0.0
+  use_amp: true
+  clip_grad_norm: 1.0
+  log_interval: 10
+  save_interval: 5
+  val_interval: 1
+
+srcnn:
+  num_channels: 3
+  f1: 64
+  f2: 32
+  f3: 3
+  k1: 9
+  k2: 1
+  k3: 5
+
+paths:
+  checkpoints: "checkpoints_combined"
+  logs: "logs_combined"
+  validation_images: "outputs/validation_images_combined"
